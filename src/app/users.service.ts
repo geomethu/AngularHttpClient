@@ -13,6 +13,7 @@ export class UsersService {
   }
 
   postUsers(data): Observable<any> {
-    return this._httpClient.post(this.url + `users`, data);
+    return this._httpClient
+    .post(this.url + `users`, data);
   }
 }
